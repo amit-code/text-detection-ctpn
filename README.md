@@ -44,7 +44,8 @@ python ./utils/prepare/split_label.py
 
 ***
 ## train 
-Simplely run
+Simplely run, but before that modify path for DATA_FOLDER in in utils/dataset/data_provider.py
+And if you want to use current training checkpoints and built further on top of it, then update max_steps in main/train.py to higher number 
 ```shell
 python ./main/train.py
 ```
