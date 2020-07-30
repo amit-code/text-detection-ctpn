@@ -8,7 +8,7 @@ import numpy as np
 
 from utils.dataset.data_util import GeneratorEnqueuer
 
-DATA_FOLDER = "data/mlt/"
+DATA_FOLDER = "/content/text-detection-ctpn/data/mlt_splitted/"
 
 
 def get_training_data():
