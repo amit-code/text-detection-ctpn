@@ -28,6 +28,33 @@ It will generate a nms.so and a bbox.so in current folder.
 ```shell
 python ./main/demo.py
 ```
+
+**To Execute test files on Windows/CPU**
+Follow below steps:
+
+step 1: change "np.int_t " to "np.intp_t" in line 25 of the file utils\bbox\nms.pyx
+otherwise appear " ValueError: Buffer dtype mismatch, expected 'int_t' but got 'long long' " in step 6.
+
+Open the x64 or x32 Visual Studio developer command prompt (or Native Tools Command Prompt) in Windows 10 
+step 2: cd text-detection-ctpn\utils\bbox
+execute:cython bbox.pyx
+execute:cython nms.pyx
+
+step 3:builf setup file as setup_new.py
+	import numpy as np
+	from distutils.core import setup
+	from Cython.Build import cythonize
+	from distutils.extension import Extension
+	numpy_include = np.get_include()
+	setup(ext_modules=cythonize("bbox.pyx"),include_dirs=[numpy_include])
+	setup(ext_modules=cythonize("nms.pyx"),include_dirs=[numpy_include])
+
+step 4:build .pyd file
+execute:python setup_new.py install
+copy bbox.cp36-win_amd64.pyd and nms.cp36-win_amd64.pyd from build\lib.win-amd64-3.6\ folder to text-detection-ctpn-master\utils\bbox
+
+
+
 ***
 # training
 ## prepare data
