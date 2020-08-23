@@ -29,7 +29,8 @@ It will generate a nms.so and a bbox.so in current folder.
 python ./main/demo.py
 ```
 
-**To Execute test files on Windows/CPU**
+**To Execute demo file on Windows/CPU**
+
 Follow below steps:
 
 step 1: change "np.int_t " to "np.intp_t" in line 25 of the file utils\bbox\nms.pyx
