@@ -44,7 +44,7 @@ execute:cython bbox.pyx
 execute:cython nms.pyx
 ```
 
-step 3:build setup file as setup_new.py in utils\bbox\ folder with below code
+step 3:create setup file as setup_new.py in utils\bbox\ folder with below code
 ```
 import numpy as np
 from distutils.core import setup
