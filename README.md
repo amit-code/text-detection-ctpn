@@ -59,8 +59,9 @@ setup(ext_modules=cythonize("nms.pyx"),include_dirs=[numpy_include])
 step 4:build .pyd file by executing below command
 ```
 execute:python setup_new.py install
-copy bbox.cp36-win_amd64.pyd and nms.cp36-win_amd64.pyd from build\lib.win-amd64-3.6\ folder to text-detection-ctpn-master\utils\bbox
 ```
+copy bbox.cp36-win_amd64.pyd and nms.cp36-win_amd64.pyd from build\lib.win-amd64-3.6\ folder to text-detection-ctpn\utils\bbox
+
 
 
 ***
