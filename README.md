@@ -21,7 +21,7 @@ chmod +x make.sh
 It will generate a nms.so and a bbox.so in current folder.
 ***
 # demo
-- make sure you install tensorflow==1.5 
+- make sure you install tensorflow==1.15.0
 - follow setup to build the library 
 - download the ckpt file from [googl drive](https://drive.google.com/file/d/1HcZuB_MHqsKhKEKpfF1pEU85CYy4OlWO/view?usp=sharing) or [baidu yun](https://pan.baidu.com/s/1BNHt_9fiqRPGmEXPaxaFXw)
 - put checkpoints_mlt/ in text-detection-ctpn/
