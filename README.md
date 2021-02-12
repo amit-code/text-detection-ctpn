@@ -14,6 +14,7 @@ Scene text detection based on ctpn (connectionist text proposal network). It is 
 # setup
 nms and bbox utils are written in cython, hence you have to build the library first.
 ```shell
+pip install -r requirements.txt 
 cd utils/bbox
 chmod +x make.sh
 ./make.sh
