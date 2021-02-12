@@ -14,7 +14,11 @@ Scene text detection based on ctpn (connectionist text proposal network). It is 
 # setup
 nms and bbox utils are written in cython, hence you have to build the library first.
 ```shell
-pip install -r requirements.txt 
+
+pip install -r requirements.txt (or pip3 install -r requirements.txt)
+
+# In case you have configured with python3 than update make.sh file to python3
+
 cd utils/bbox
 chmod +x make.sh
 ./make.sh
@@ -28,7 +32,7 @@ It will generate a nms.so and a bbox.so in current folder.
 - put checkpoints_mlt/ in text-detection-ctpn/
 - put your images in data/demo, the results will be saved in data/res, and run demo in the root 
 ```shell
-python ./main/demo.py
+python ./main/demo.py (or python3 ./main/demo.py )
 ```
 
 **To Execute demo file on Windows/CPU**
