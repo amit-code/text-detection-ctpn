@@ -46,8 +46,9 @@ Open the x64 or x32 Visual Studio developer command prompt (or Native Tools Comm
 
 step 2: cd text-detection-ctpn\utils\bbox
 ```
-execute:cython bbox.pyx
-execute:cython nms.pyx
+pip install cython
+cython bbox.pyx
+cython nms.pyx
 ```
 
 step 3:create setup file as setup_new.py in utils\bbox\ folder with below code
