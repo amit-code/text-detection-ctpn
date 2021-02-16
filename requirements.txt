@@ -6,4 +6,5 @@ numpy==1.14.2
 tensorflow==1.4.0
 Cython==0.24.1
 ipython==5.1.0
+lxml==4.6.2
 tensorflow-gpu==1.4.0
